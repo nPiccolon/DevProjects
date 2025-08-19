@@ -1,0 +1,6 @@
+OUT enter a number
+IN num1
+OUT enter the second number
+IN num2 
+ADD sum num1 num2
+OUT sum

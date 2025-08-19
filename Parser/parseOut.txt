@@ -1,0 +1,159 @@
+Nick Piccolo, CSCI4200, Spring 2023, Parser
+********************************************************************************
+PROGRAM
+	read(count);
+	total = 25
+	if (count) then average = total/count;
+	      Area = (length+width) * 2
+	C     =          age  - 5 * (D / C);
+	print(C+Area);
+END
+********************
+Next token is: PROGRAM_KEYWORD
+Enter <program>
+
+Next token is: READ_KEYWORD
+Enter <input>
+Next token is: LEFT_PAREN  
+Next token is: IDENT       
+Next token is: RIGHT_PAREN 
+Next token is: SEMICOLON   
+Exit <input>
+
+Next token is: IDENT       
+Enter <assign>
+Next token is: ASSIGN_OP   
+Next token is: INT_LIT     
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: INT_LIT     
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+
+**ERROR** - expected SEMICOLON after a statement
+
+Next token is: IF_KEYWORD  
+Enter <selection>
+Next token is: LEFT_PAREN  
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: THEN_KEYWORD
+Next token is: IDENT       
+Enter <assign>
+Next token is: ASSIGN_OP   
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: DIV_OP      
+Exit <factor>
+Next token is: IDENT       
+Enter <factor>
+Next token is: SEMICOLON   
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+Exit <selection>
+
+Next token is: IDENT       
+Enter <assign>
+Next token is: ASSIGN_OP   
+Next token is: LEFT_PAREN  
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP      
+Exit <factor>
+Exit <term>
+Next token is: IDENT       
+Enter <term>
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: MULT_OP     
+Exit <factor>
+Next token is: INT_LIT     
+Enter <factor>
+Next token is: INT_LIT     
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+
+**ERROR** - expected SEMICOLON after a statement
+
+Next token is: IDENT       
+Enter <assign>
+Next token is: ASSIGN_OP   
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: SUB_OP      
+Exit <factor>
+Exit <term>
+Next token is: INT_LIT     
+Enter <term>
+Enter <factor>
+Next token is: MULT_OP     
+Exit <factor>
+Next token is: LEFT_PAREN  
+Enter <factor>
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: DIV_OP      
+Exit <factor>
+Next token is: IDENT       
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: SEMICOLON   
+Exit <factor>
+Exit <term>
+Exit <expr>
+Exit <assign>
+
+Next token is: PRINT_KEYWORD
+Enter <output>
+Next token is: LEFT_PAREN  
+Next token is: IDENT       
+Enter <expr>
+Enter <term>
+Enter <factor>
+Next token is: ADD_OP      
+Exit <factor>
+Exit <term>
+Next token is: IDENT       
+Enter <term>
+Enter <factor>
+Next token is: RIGHT_PAREN 
+Exit <factor>
+Exit <term>
+Exit <expr>
+Next token is: SEMICOLON   
+Exit <output>
+
+Next token is: END_KEYWORD 
+Exit <program>
+Parsing of the program is complete!
+********************************************************************************
